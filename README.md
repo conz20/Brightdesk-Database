@@ -1,12 +1,15 @@
 # Brightdesk Database
 
-![Brightdesk Database repository banner](assets/social-preview.svg)
+<p align="center"><img src="src/branding/mark.svg" alt="Brightdesk brand mark" width="82" height="82"><br><strong>brightdesk</strong></p>
+<p align="center"><img src="src/branding/icons/database.svg" alt="Brightdesk Database application icon" width="112" height="112"></p>
 
-![Brightdesk Database product artwork](assets/brightdesk-product.svg)
+<p align="center"><strong>Create local tables, define fields, manage records and export data.</strong></p>
 
-Create local tables, define fields, manage records and export data.
+<p align="center"><img src="src/branding/previews/database.svg" alt="Brightdesk Database workspace design preview" width="100%"></p>
 
-Brightdesk is an independent desktop product. This repository is the dedicated desktop edition of **Brightdesk Database**. It opens directly into Database, with product switching disabled.
+> **Visual example:** This is an original Brightdesk design preview showing the intended desktop workspace. It is an illustrative concept, not a screenshot of a completed release build.
+
+Brightdesk Database is a dedicated desktop application within the independent Brightdesk Office Suite. It uses the shared Brightdesk design language and opens directly into Database.
 
 ## What this product does
 
