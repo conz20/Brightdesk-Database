@@ -63,3 +63,26 @@ Use win on Windows or linux on Linux instead of mac.
 ## Identity and licence
 
 Brightdesk is independent and is not affiliated with Microsoft. It uses original product names, code, interface design and artwork. See LICENSE, TERMS_AND_CONDITIONS.txt and THIRD_PARTY_NOTICES.md.
+
+## Professional workspace examples and acceptance
+
+Database should present structured information with the clarity of a professional data workspace. The main example should show a named table, meaningful fields, realistic records, sorting/filtering controls and a visible record detail or edit state.
+
+### Example workflow
+
+1. Create a small contacts or inventory database.
+2. Define fields with appropriate names and data types.
+3. Add several realistic records and edit one record.
+4. Sort records in ascending and descending order.
+5. Export records to CSV and verify the exported values.
+
+The table is the primary work surface. Use consistent field labels, clear row selection, readable density, visible validation and safe confirmation for destructive actions. Keep table controls aligned and predictable; avoid presenting sample data as user data.
+
+Follow the shared [Brightdesk visual and interaction standard](https://github.com/connormolloy12/Brightdesk-suite/blob/main/docs/BRIGHTDESK_VISUAL_STANDARD.md).
+
+### Acceptance checks
+
+- Field definitions and record editing are clear and validated.
+- Ascending/descending sorting produces the expected order.
+- CSV export safely handles formula-like text values.
+- Persistence, keyboard access and accessible names are tested before feature claims are made.
