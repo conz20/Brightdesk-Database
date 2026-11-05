@@ -14,9 +14,9 @@ test("Brightdesk shared shell matches the approved visual contract", () => {
     ["--bd-accent-strong", "#63418F"],
     ["--bd-accent-soft", "#F4EFFA"]
   ]) {
-    assert.match(css, new RegExp(token + "\\s*:\\s*" + value.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&") + "\\s*;"), `missing approved ${token} value ${value}`);
+    assert.ok(css.includes(token + ": " + value + ";"), "missing approved " + token + " value " + value);
   }
-  assert.match(css, /\.sidebar\\s*\\{[^}]*background:\\s*var\\(--bd-nav-gradient\\)/s);
+  assert.match(css, /\\.sidebar\\s*\\{[^}]*background:\\s*var\\(--bd-nav-gradient\\)/s);
   assert.match(css, /:focus-visible\\s*\\{[^}]*outline-color:\\s*var\\(--bd-accent\\)/s);
   assert.match(css, /@media\\s*\\(prefers-reduced-motion:\\s*reduce\\)/);
 });
