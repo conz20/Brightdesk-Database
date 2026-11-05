@@ -15,6 +15,9 @@ Brightdesk Database is a dedicated desktop application within the independent Br
 
 ## Shared Brightdesk design standard
 
+Follow the local [approved design brief](docs/BRIGHTDESK_DESIGN.md) and canonical Brightdesk visual standard. The approved Database accent is `#8058B3`; use the original SVG icon and retain the shared light canvas, navy navigation and white work surfaces.
+
+
 This product follows the [Brightdesk visual and interaction standard](https://github.com/connormolloy12/Brightdesk-suite/blob/main/docs/BRIGHTDESK_VISUAL_STANDARD.md) for branding, icon usage, layout, responsive behaviour and accessibility.
 
 ## Current first-use workflows
