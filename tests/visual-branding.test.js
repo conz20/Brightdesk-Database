@@ -16,3 +16,18 @@ test('Database follows the approved Brightdesk design contract',()=>{
  assert.ok(readme.includes('docs/BRIGHTDESK_DESIGN.md'));
  assert.ok(brief.includes('BRIGHTDESK_VISUAL_STANDARD.md')&&brief.includes('#8058B3'));
 });
+
+test('final stylesheet tokens match the exact approved Database palette', () => {
+  const css = fs.readFileSync(path.join(root, 'src', 'design-system.css'), 'utf8');
+  const lastHex = (token) => {
+    const values = [...css.matchAll(new RegExp(token + String.raw`\s*:\s*(#[0-9a-f]{6})`, 'gi'))];
+    return values.at(-1)?.[1].toUpperCase();
+  };
+
+  assert.equal(lastHex('--bd-accent'), '#8058B3');
+  assert.equal(lastHex('--bd-accent-strong'), '#63428F');
+  assert.equal(lastHex('--bd-accent-soft'), '#F3EFF8');
+  assert.equal(lastHex('--bd-product-tint'), '#F3EFF8');
+  assert.equal(lastHex('--bd-canvas'), '#F3F6FA');
+  assert.equal(lastHex('--bd-ink'), '#202B3C');
+});
