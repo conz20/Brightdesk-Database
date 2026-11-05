@@ -9,7 +9,7 @@
 
 <p align="center"><sub>Select the preview to open the full-size artwork.</sub></p>
 
-> **Visual example:** This is an original Brightdesk design preview showing the intended desktop workspace. It is an illustrative concept, not a screenshot of a completed release build.
+> **Concept artwork — not a screenshot.** The preview above is original Brightdesk design artwork, not a capture from the running desktop build. A genuine screenshot will be added only after the current product window has been launched and its primary workflow checked.
 
 Brightdesk Database is a dedicated desktop application within the independent Brightdesk Office Suite. It uses the shared Brightdesk design language and opens directly into Database.
 
@@ -17,10 +17,14 @@ Brightdesk Database is a dedicated desktop application within the independent Br
 
 This product follows the [Brightdesk visual and interaction standard](https://github.com/connormolloy12/Brightdesk-suite/blob/main/docs/BRIGHTDESK_VISUAL_STANDARD.md) for branding, icon usage, layout, responsive behaviour and accessibility.
 
-## What this product does
+## Current first-use workflows
 
-Create local tables, define fields, manage records and export structured data.
+- Create, rename and delete local tables.
+- Add fields with supported text, number, date, email, web address, checkbox and choice-list types.
+- Add, edit, search, sort and delete records, with validation for required values.
+- Export a table to CSV and keep the database data on this device.
 
+**Not included in this first version:** SQL query execution, table relationships, a query designer, form/report designers, database import, online hosting and collaboration.
 ## Desktop installers
 
 | Platform | Installer |
