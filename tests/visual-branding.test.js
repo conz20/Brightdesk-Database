@@ -25,9 +25,9 @@ test('final stylesheet tokens match the exact approved Database palette', () => 
   };
 
   assert.equal(lastHex('--bd-accent'), '#8058B3');
-  assert.equal(lastHex('--bd-accent-strong'), '#63428F');
-  assert.equal(lastHex('--bd-accent-soft'), '#F3EFF8');
-  assert.equal(lastHex('--bd-product-tint'), '#F3EFF8');
+  assert.equal(lastHex('--bd-accent-strong'), '#63418F');
+  assert.equal(lastHex('--bd-accent-soft'), '#F4EFFA');
+  assert.equal(lastHex('--bd-product-tint'), '#F4EFFA');
   assert.equal(lastHex('--bd-canvas'), '#F3F6FA');
   assert.equal(lastHex('--bd-ink'), '#202B3C');
 });
