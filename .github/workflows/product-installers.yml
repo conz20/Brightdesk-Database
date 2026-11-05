@@ -2,10 +2,16 @@ name: Build Brightdesk Database desktop installers
 on:
   pull_request:
     branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.mdx'
   push:
     branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.mdx'
   schedule:
-    - cron: '17 4 * * *'
+    - cron: '53 4 * * 4'
   workflow_dispatch:
     inputs:
       build_installers:
