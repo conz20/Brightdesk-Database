@@ -75,7 +75,7 @@ Use win on Windows or linux on Linux instead of mac.
 
 - src/ — Brightdesk desktop renderer and product modules.
 - `src/branding/icons/database.svg` — original Brightdesk Database application icon.
-- `src/branding/previews/database.svg` — workspace concept preview.
+- `src/branding/previews/database.svg` — workspace interface design.
 - scripts/ — build and release verification tools.
 - tests/ — automated product and shared-engine tests.
 
