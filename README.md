@@ -98,3 +98,10 @@ The Windows, macOS and Linux installer matrix remains available through a manual
 ## Documentation freshness
 
 The root README is maintained alongside the product, not as an end-of-project task. Every pull request that changes application code, tests, UI, design assets, screenshots, icons, configuration, dependencies, packaging, or build/release workflows must also update this README in the same pull request. Keep feature status, screenshots and visual references, application icons, setup/build instructions, platform compatibility, and repository links aligned with the latest verified implementation. Describe planned or untested functionality as planned, never as completed. The **README freshness** GitHub Actions check requires a root `README.md` update whenever a pull request or direct push to `main` changes a non-Markdown file; a passing check confirms inclusion, while reviewers remain responsible for checking factual accuracy and current visuals.
+
+
+## Individual product window
+
+When opened by itself, Brightdesk Database opens directly into its database workspace. The Suite's product-management sidebar and generic welcome banner are not shown. Database navigation stays beside the selected table, while record and field controls remain close to the data grid they affect. The selected workspace uses the full available window area.
+
+The interface preview is design artwork showing the intended table-and-record layout; it is not a screenshot from a verified running build.
