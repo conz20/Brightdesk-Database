@@ -111,6 +111,6 @@ The root README is maintained alongside the product, not as an end-of-project ta
 
 ## Individual product window
 
-When opened by itself, Brightdesk Database opens directly into its database workspace. The Suite's product-management sidebar and generic welcome banner are not shown. Database navigation stays beside the selected table, while record and field controls remain close to the data grid they affect. The selected workspace uses the full available window area.
+When opened by itself, Brightdesk Database opens directly into its database workspace. The Suite's generic product-management view and welcome banner are removed; its own left navigation remains available with optional compact icon-only mode and accessible labels. Database navigation stays beside the selected table, while record and field controls remain close to the data grid they affect. The selected workspace uses the full available window area.
 
 The interface preview is design artwork showing the intended table-and-record layout; it is not a screenshot from a verified running build.
