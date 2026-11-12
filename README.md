@@ -45,6 +45,12 @@ These are configured build targets, not confirmation that a package has passed i
 
 **Updates and removal:** The approved product version and feature scope must remain aligned across all operating systems. Update packages must come from the same tested release. Native installation and removal controls can differ by operating system, but the expected outcome is consistent: remove the product without silently deleting local project data. Do not claim update, upgrade or uninstall verification for an operating system until its native workflow has passed.
 
+## Shared local JSON storage
+
+The current shared-storage integration uses the Brightdesk-owned JSON helper from the private [Brightdesk-Common-Libs](https://github.com/conz20/Brightdesk-Common-Libs) repository. The exact source revision and Git blob are recorded in `src/vendor/brightdesk-common-libs/UPSTREAM.json`, and the product contract test checks the vendored bytes against that source.
+
+The helper is bundled locally and loaded before the renderer. It does not download code or access GitHub at runtime. Existing local document keys remain unchanged: `brightdesk-docs-v3`, the legacy `brightdesk-docs-v2` read fallback, and `brightdesk-app-setup-v1`. Reading legacy data does not remove or rewrite the legacy key; a later document save uses v3. Malformed stored JSON is surfaced for recovery rather than silently overwritten.
+
 ## Current first-use workflows
 
 - Create, rename and delete local tables.
