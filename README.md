@@ -136,3 +136,7 @@ This product bundles the Brightdesk Common-Libs JSON storage helper locally at `
 The helper is loaded from the installed product before `src/app.js`. It does not load from GitHub, a package registry or another network service at runtime, so normal document storage remains on this device and works offline.
 
 The Windows WSD regression test also verifies that a previously selected opaque printer ID remains pairable after a subsequent discovery refresh.
+
+## Private self-hosted CI
+
+Pull-request workflows that use owner-operated runners run only for changes made in this repository. Pull requests from forks are not executed on these private computers.
