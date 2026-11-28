@@ -103,7 +103,7 @@ Brightdesk is independent and is not affiliated with Microsoft. It uses original
 
 Pull requests and pushes to `main` run the product validation job. Markdown-only changes are excluded from this test workflow because they do not change executable product code; the README freshness check remains responsible for documentation changes.
 
-A scheduled maintenance validation runs every **Thursday at 04:53 UTC**. The scheduled run performs product validation on Brightdesk's private macOS ARM64 runner, including release preflight and dependency audit; it does not create desktop installers.
+The product validation job and README freshness check use GitHub-hosted Ubuntu runners. The installer matrix uses GitHub-hosted platform runners for Windows, macOS and Linux, and the opt-in publish job also runs on GitHub-hosted infrastructure. No workflow requires the owner's MacBook or a self-hosted runner.
 
 The Windows, macOS and Linux installer matrix remains available through a manual workflow dispatch with `build_installers: true`. Publishing remains a separate opt-in action with `publish_release: true`. This keeps routine checks lighter without removing any operating-system build target or reducing cross-platform release coverage.
 
