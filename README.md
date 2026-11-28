@@ -13,6 +13,8 @@
 
 Brightdesk Database is a dedicated desktop application within the independent Brightdesk Office Suite. It uses the shared Brightdesk design language and opens directly into Database.
 
+Development and CI use the exact Node.js 24.22.3 LTS runtime.
+
 ## Shared Brightdesk design standard
 
 This product follows the [Brightdesk visual and interaction standard](https://github.com/connormolloy12/Brightdesk-suite/blob/main/docs/BRIGHTDESK_VISUAL_STANDARD.md) for branding, icon usage, layout, responsive behaviour and accessibility.
@@ -71,7 +73,7 @@ Pull requests and pushes run the product and shared-engine test suite, verify th
 
 ## Run from source
 
-Use Node.js **24.22.2**.
+Use Node.js **24.22.3**.
 
     npm ci
     npm start
